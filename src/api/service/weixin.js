@@ -19,7 +19,7 @@ module.exports = class extends think.Service {
 
       let sessionData = await rp(options);
       sessionData = JSON.parse(sessionData);
-      if (!sessionData.openid) {
+      if (!sessionData.openid) { 
         return null;
       }
 
